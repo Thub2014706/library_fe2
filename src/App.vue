@@ -1,16 +1,17 @@
 <script>
-    // import AppHeader from "@/components/AppHeader.vue";
-    // export default {
-    //   components: {
-    //     AppHeader,
-    //   },
-    // }
+    import Header from "@/components/header.vue";
+    export default {
+        components: {
+          Header,
+        },
+    };
 </script>
 
 <template>
     <!-- <AppHeader /> -->
     <div id="app">
-        <div class="container-fluid">
+        <Header />
+        <div>
           <router-view />
         </div>
     </div>
